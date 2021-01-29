@@ -1,0 +1,213 @@
+/*nav item color, hover and active color set*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(59, 18, 149, 0.85);
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+ .navbar-light .navbar-nav .show>.nav-link, 
+ .navbar-light .navbar-nav .nav-link:focus, 
+ .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(240, 3, 137, 0.9);
+}
+
+/*bg color set for slider  area */
+
+.bg-carousel {
+    background: linear-gradient(45deg, #032644, #5117978a);
+}
+
+/*bg color set for subscriber area*/
+
+.bg-subscribe {
+    background: linear-gradient(45deg, #bb1ba2, #3c38b5);
+}
+
+/*all product price color set*/
+
+.price-color {
+    color: #FF136F;
+}
+
+/*padding top set for section */
+
+.pt-6 {
+    padding-top: 4rem;
+}
+
+/*custom button packg*/
+
+.btn-custom {
+    background: linear-gradient(45deg, #bd109a, #b71919);
+    padding: 8px 26px;
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 7px;
+    position: relative;
+    border: 0;
+    overflow: hidden;
+}
+
+/*set before shape when button hovered*/
+
+.btn-custom::before {
+    display: inline-flex;
+    z-index: 10;
+    content: "";
+    background: #203647;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: all .3s;
+}
+
+/*set after shape when button hovered*/
+
+.btn-custom::after {
+    display: inline-flex;
+    z-index: 10;
+    content: "";
+    background: #203647;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -100%;
+    transition: all .3s;
+}
+
+/*set hover effect for button*/
+
+.btn-custom:hover::after {
+    left: -50%;
+}
+
+.btn-custom:hover:before {
+    right: -50%;
+}
+
+.btn-carosuel::after, .btn-carosuel::before {
+    background: #ff136f;
+}
+
+/*subscribe btn bg-color set*/
+
+.bg-subscribe-btn {
+    background: linear-gradient( -45deg, #1b1e24, #072c33) !important;
+}
+
+.bg-subscribe-btn::after, .bg-subscribe-btn::before {
+    background: #ff136f;
+}
+
+/*set high z-index for show button text when it hover*/
+
+span.high-z-index {
+    position: relative;
+    z-index: 1030;
+}
+
+/*override button hover color*/
+
+.btn-custom:hover {
+    color: #fff;
+}
+
+/*romove shadow and outline when button focused*/
+
+.btn-custom:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*gradient text*/
+
+.text-gradient {
+    background: linear-gradient(45deg, #fff, #04ffb8 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*set small size image for catagoris */
+
+.catagoris img {
+    width: 100px;
+}
+
+/*catgoris card background color set*/
+
+.bg-leafgreen {
+    background-color: #264F41;
+}
+
+.bg-brown-gray {
+    background-color: #3c403d;
+}
+
+.bg-blueshadow {
+    background-color: #203647;
+}
+
+/*set paddin for card for catagoris section*/
+
+.card-1 {
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+/*hover effect set for every card*/
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+/*set custom box-shadow for product card*/
+
+.card-2 {
+    border: 0;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, .25) !important;
+}
+
+/*remove border for product card footer*/
+
+.card-2 .card-footer {
+    border-top: 0 !important;
+}
+
+/*set height for subscribe section*/
+
+.h-300 {
+    height: 300px;
+}
+
+/*subscribe section shape*/
+
+.shape {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, pink, lime);
+    opacity: .2;
+    transition: all .3s;
+}
+
+.shape-1 {
+    bottom: 100%;
+    left: 70%;
+}
+
+.shape-2 {
+    top: 100%;
+    right: 70%;
+}
+
+.subscribe:hover>.shape-1, .subscribe:hover>.shape-2 {
+    transform: scale(1.5);
+}
